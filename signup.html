@@ -1,116 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style/login.css" />
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
     />
-    <link rel="stylesheet" href="style/login.css" />
   </head>
   <body>
-    <div
-      class="container d-flex justify-content-center align-items-center min-vh-100"
-    >
-      <div class="row border rounded-4 p-3 bg-white shadow box-area">
-        <!-- left -->
-        <div
-          class="col-md-6 rounded-3 d-flex justify-content-center align-items-center flex-column left-box"
-          style="background: skyblue"
-        >
-          <div class="featured-image mb-3">
-            <img src="asset/left.png" class="img-fluid" style="width: 250px" />
-          </div>
-          <p
-            class="text-white fs-2"
-            style="
-              font-family: 'Courier New', Courier, monospace;
-              font-weight: 600;
-            "
-          >
-          Huhu News
-          </p>
-          <small
-            class="text-white text-wrap text-center mb-4"
-            style="
-              width: 17rem;
-              font-family: 'Courier New', Courier, monospace;
-              font-weight: 600;
-            "
-            >"Stay at Home. Stay Informed. Stay Connected."</small
-          >
+    <div class="center">
+      <h1>Welcome!</h1>
+      <p>Register to <span>Banana</span>News</p>
+      <form method="post">
+        <div class="txt-field">
+          <input type="text" required />
+          <span class="icon"><i data-feather="user"></i></span>
+          <label>Email</label>
         </div>
 
-        <!-- right -->
-        <div class="col-md-6 right-box">
-          <div class="row align-items-center">
-            <div class="header-text mb-4">
-              <h2>Register</h2>
-              <p>"See the World with your Finger!"</p>
-            </div>
-            <div class="input-group mb-2">
-              <input
-                type="text"
-                class="form-control form-control-lg bg-light fs-6"
-                placeholder="Email"
-              />
-            </div>
-
-            <div class="input-group mb-2">
-              <input
-                type="text"
-                class="form-control form-control-lg bg-light fs-6"
-                placeholder="Username"
-              />
-            </div>
-
-            <div class="input-group mb-2">
-              <input
-                type="password"
-                class="form-control form-control-lg bg-light fs-6"
-                placeholder="Password"
-              />
-            </div>
-
-            <div class="input-group mb-5">
-              <input
-                type="password"
-                class="form-control form-control-lg bg-light fs-6"
-                placeholder="Confirm Password"
-              />
-            </div>
-
-            <!-- <div class="input-group mb-5 d-flex justify-content-between">
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="formCheck"
-                />
-                <label for="formCheck" class="form-check-label text-secondary"
-                  ><small>Remember Me</small></label
-                >
-              </div>
-              <div class="forgot">
-                <small><a href="#"> Reset password?</a></small>
-              </div>
-            </div> -->
-
-            <div class="input-group mb-3">
-              <button class="btn btn-lg btn-primary w-100 fs-6">Sign Up</button>
-            </div>
-
-            <div class="row">
-              <small>Have any account? <a href="login.html">Login</a></small>
-            </div>
-
-          </div>
+        <div class="txt-field">
+          <input type="text" required />
+          <span class="icon"><i data-feather="user"></i></span>
+          <label>Username</label>
         </div>
-      </div>
+        
+        <div class="txt-field">
+            <input type="password" required />
+            <span class="icon"><i data-feather="lock"></i></span>
+            <label>Password</label>
+        </div>
+
+        <div class="txt-field">
+          <input type="password" required />
+          <span class="icon"><i data-feather="check-square"></i></span>
+          <label>Confirm Password</label>
+        </div>
+
+        <input type="submit" value="Sign Up" />
+        <!-- <div class="pass">
+          Forgot Password?
+          <a href="reset.html">Reset Password</a>
+        </div> -->
+        
+        <div class="signup-link">
+          I have any account!
+          <a href="login.html">Login</a>
+        </div>
+      </form>
     </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
