@@ -14,14 +14,16 @@ html {
 
 :root {
     --heading: 'Montserrat', sans-serif;
-    --primary: #252525;
+    --bg-blue: #0c0c1e;
     --bg: #010101;
+    --text: #fff;
+    --primary: #F55E2C;
 }
 
 body {
     overflow-y: scroll;
     font-family: 'Raleway', sans-serif;
-    background: #fff;
+    background: var(--bg);
     min-height: 100%;
     overflow-y: scroll;
 }
@@ -48,7 +50,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--text);
 }
 
 hr {
@@ -62,8 +64,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(1, 1, 1, 0.8);
-    border-bottom: 1px solid var(--primary);
+    background-color: rgba(12, 12, 30, 0.8);
+    border-bottom: 1px solid var(--bg-blue);
     position: fixed;
     top: 0;
     left: 0;
@@ -74,15 +76,15 @@ hr {
 .navbar .navbar-logo {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--text);
 }
 
 .navbar .navbar-logo span {
-    color: grey;
+    color: var(--primary);
 }
 
 .navbar .navbar-nav a {
-    color: #fff;
+    color: var(--text);
     display: inline-block;
     font-size: 1.4rem;
     margin: 0 1rem;
@@ -103,14 +105,14 @@ hr {
 }
 
 .navbar .navbar-right a {
-    color: #fff;
+    color: var(--text);
     margin: 0 0.5rem;
     align-items: center;
     justify-content: center;
 }
 
 .navbar .navbar-right a:hover {
-    color: #acacac;
+    color: var(--primary);
 }
 
 #hamburger-menu {
@@ -122,7 +124,7 @@ hr {
     position: absolute;
     top: 100%;
     right: 7%;
-    background-color: #fff;
+    background-color: var(--text);
     width: 50rem;
     height: 4rem;
     display: flex;
@@ -184,7 +186,7 @@ hr {
 }
 
 #login:hover {
-    color: #acacac;
+    color: var(--primary);
 }
 
 .dropbtn {
@@ -200,7 +202,7 @@ hr {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: var(--bg-blue);
     min-width: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 8%;
@@ -242,11 +244,14 @@ hr {
 }
 
 .banner-main-content h2 {
+    color: var(--text);
     font-size: 2rem;
     font-family: var(--heading);
 }
 
 .banner-main-content h3 {
+    background-color: black;
+    color: var(--text);
     padding: 1rem 0;
 }
 
@@ -260,7 +265,7 @@ hr {
 }
 
 .banner-main-content button a {
-    color: #f3f3f3f3;
+    color: var(--text);
     transition: color 1s ease;
 }
 
@@ -269,12 +274,12 @@ hr {
 }
 
 .banner-main-content button:hover a {
-    color: #0d0a0b;
+    color: var(--bg);
 }
 
 
 .current-news-head {
-    background: #fff;
+    background: none;
     padding: 20px;
     font-size: 12px;
     margin: 20px 0;
@@ -318,7 +323,7 @@ hr {
     right: 20px;
     padding: 10px 20px;
     line-height: 1.3;
-    color: #f3f3f3;
+    color: var(--text);
 }
 
 .hot-topic h2 {
@@ -342,7 +347,7 @@ hr {
 
 .hot-topic-content a {
     display: block;
-    background: #f3f3f3;
+    background: var(--primary);
     border: none;
     width: 95px;
     border-radius: 2px;
@@ -362,6 +367,7 @@ main a {
     padding: 15px 0;
     display: block;
     transition: all 0.5s;
+    color: var(--primary);
 }
 
 main span {
@@ -373,7 +379,7 @@ main a:hover span {
 }
 
 main a:hover {
-    color: #acacac;
+    color: var(--text);
 }
 
 /* main container left */
@@ -383,6 +389,7 @@ main a:hover {
 }
 
 .main-container-left>h2 {
+    color: var(--text);
     padding: 15px 0 15px 30px;
 }
 
@@ -390,15 +397,18 @@ main a:hover {
     padding: 10px 0;
     font-size: 18px;
     font-family: var(--heading);
+    color: var(--text);
 }
 
 .main-container-left p {
+    color: var(--text);
     font-size: 15px;
     font-weight: 300;
 }
 
 .main-container-left article {
     padding: 10px;
+    background: none;
 }
 
 .container-top-left {
@@ -406,7 +416,7 @@ main a:hover {
 }
 
 .container-bottom-left {
-    background: #f3f3f3;
+    background: none;
     margin: 15px 30px;
 }
 
@@ -418,13 +428,14 @@ main a:hover {
 
 .main-container-right>h2 {
     padding: 15px 0 15px 30px;
+    color: var(--text);
 }
 
 .main-container-right article {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     padding: 15px 0;
-    border-bottom: 1px solid #acacac;
+    border-bottom: 1px solid var(--text);
 }
 
 .main-container-right article:last-child {
@@ -443,15 +454,18 @@ main a:hover {
     font-weight: 300;
     font-size: 12px;
     align-self: center;
+    color: var(--text);
 }
 
 .main-container-right article h2 {
     font-size: 18px;
     padding: 10px 0;
+    color: var(--text);
     font-family: var(--heading);
 }
 
 .main-container-right article p {
+    color: var(--text);
     font-size: 15px;
     font-weight: 300;
 }
@@ -464,13 +478,14 @@ main a:hover {
 /****** footer *****/
 
 footer {
-    background: var(--primary);
+    background: var(--bg-blue);
     color: #f3f3f3;
     padding: 30px;
 }
 
 footer h2 {
     padding: 10px 0;
+    color: var(--primary);
 }
 
 footer p {
@@ -520,7 +535,7 @@ footer>p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: var(--primary);
     bottom: 40px;
     right: 50px;
     text-decoration: none;
@@ -613,7 +628,7 @@ footer>p {
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: #acacac;
+        background-color: var(--bg-blue);
         width: 30%;
         height: 100vh;
         transition: 0.4s;
@@ -624,7 +639,6 @@ footer>p {
     }
 
     .navbar .navbar-nav a {
-        color: var(--bg);
         display: block;
         margin: 1.5rem;
         padding: 0.5rem;
