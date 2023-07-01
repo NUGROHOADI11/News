@@ -18,7 +18,7 @@
   <body>
     <!-- nav bar -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><span>Azur</span>Light.</a>
+      <a href="#" class="navbar-logo">Azur<span>Light</span>.</a>
       <div class="navbar-nav">
         <a href="landing.html">Home</a>
         <a href="#">Category</a>
@@ -27,18 +27,30 @@
       </div>
 
       <div class="navbar-right">
+        <a id="search-button"><i data-feather="search"></i></a>
         <div class="dropdown">
           <i data-feather="user" id="login"></i>
           <div class="dropdown-content">
               <a href="login.html">LogIn</a>
               <a href="signup.html">SignUp</a>
+            <!-- <a href="#">Exit</a> -->
           </div>
         </div>
         <a id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+      
+      <div class="search-form">
+        <select id="search-filter">
+          <option value="all">All</option>
+          <option value="category1">Category</option>
+          <option value="category2">Author</option>
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
     </nav>
     <!-- navbar end -->
-
+    
     <main>
       <section class="main-container-left">
         <h2>Best Used Cars Under $1234,00 for families</h2>
@@ -47,30 +59,56 @@
             <img src="asset/top-left.jpg" />
 
             <div>
-              <h3>Malang, March 7th 2024</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis ea sint, nisi rem earum fugit? Facere veritatis
-                sapiente eveniet quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut eius voluptatibus atque distinctio minus. Voluptates excepturi nobis molestiae aliquid optio quis mollitia, rem dignissimos accusantium cupiditate, dolores tenetur fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at accusamus officia numquam vitae velit ipsum aliquid nostrum asperiores veritatis, sed esse magni error optio odio atque praesentium. Ullam iste facere reprehenderit eos saepe animi rerum eum! Tempora sed commodi similique adipisci veniam illum molestias temporibus, vero, perspiciatis odit quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas quod dicta vitae accusantium dolor dolores nihil? Dolores minus est deserunt id a, molestias animi iure ea eos magni ipsam optio, at itaque vero deleniti commodi ipsum debitis? Unde, voluptatem molestias ratione nam obcaecati officiis iste laudantium quo ea qui.
+              <h3>Friday, November 9 2024</h3>
+              
+              <p class="indented">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea sint, nisi rem earum fugit? Facere veritatis
+                sapiente eveniet quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae velit vel facere dignissimos, ipsam assumenda fuga atque maiores quos, amet adipisci! Animi vero minus quas eveniet, odio excepturi nihil voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, architecto ut quasi voluptas aut fugit labore. Sequi explicabo quod corrupti quos, quam facere nihil aliquam nisi cupiditate velit necessitatibus pariatur vitae! Quo ab doloribus tempora nesciunt sapiente modi enim laboriosam nostrum itaque vero magnam possimus qui nam, similique perferendis distinctio ex delectus eum pariatur praesentium quod dicta aperiam. Corrupti amet, sequi deleniti temporibus ex doloremque dolores illum impedit dolorum a consequatur at laboriosam aliquid quia debitis veritatis consectetur soluta dolore voluptate officia mollitia harum aut quod. Magni earum eligendi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dicta eos excepturi maxime esse distinctio porro vero sunt, aspernatur dolorum quidem nobis omnis. Amet totam deserunt et provident facilis dolorum itaque vitae minima asperiores sequi voluptatum sed ipsam velit illum repudiandae a, incidunt est vero! Amet rerum, quae aperiam ab facere labore? Nisi veritatis quaerat voluptatum aut, laborum ullam soluta, accusamus modi minima sed perspiciatis saepe. Ratione officiis nisi a blanditiis consectetur natus non eveniet repellat voluptas sequi quod laboriosam excepturi cumque voluptate quas deleniti ipsa ad beatae at quis, porro debitis laborum. Sunt distinctio quam cupiditate deserunt doloribus fugit. 
               </p>
               <br>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eligendi suscipit iusto dolores hic sed corporis ab quaerat. Voluptas temporibus delectus veritatis nobis architecto. Deleniti, laboriosam placeat quos explicabo reprehenderit atque. Aliquam, magni. Sapiente accusantium, incidunt dolorem quisquam architecto illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla voluptas earum architecto perspiciatis dolores repellat vero sapiente eligendi provident unde impedit, in neque autem officia. Repellendus animi eos exercitationem, nulla, dicta, repellat vero corporis laborum labore nisi cumque magni error iure quisquam ratione harum sunt veritatis sequi sint totam culpa autem consequuntur impedit. Enim nam nobis quisquam illo ipsam esse rem illum odit ullam iusto repudiandae neque inventore similique, facilis repellat fuga sapiente earum itaque officiis at iste? Dolore, totam quidem ut impedit doloribus repellendus quam hic exercitationem quo mollitia id magni sit consectetur molestias laudantium error. Voluptatibus, reprehenderit? lorem100
-              </p>
-              <br>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque repellat doloribus maiores, at ut explicabo nobis ad, expedita earum nulla esse temporibus minus possimus alias? Quod error doloribus cupiditate, voluptatibus ullam aspernatur, incidunt expedita natus reprehenderit quibusdam nihil, impedit repudiandae labore deleniti sed! Inventore excepturi nam non quis, voluptatum id maiores ut aliquam, eligendi accusamus saepe repellat nobis nostrum animi veritatis, tenetur dolorem. Laboriosam similique sapiente consequatur voluptatem eveniet odit itaque, eaque voluptatibus excepturi sed corporis inventore tempore quod soluta rerum? Quibusdam ad dolorem similique maxime eius laudantium obcaecati commodi? Omnis nulla earum quisquam nemo nesciunt? Suscipit nobis cumque expedita blanditiis aut maxime molestiae tempora enim earum! Aut quia sint excepturi, enim vitae quibusdam ea minus officiis esse id porro! Vel ex enim distinctio iure accusantium voluptas unde nulla laborum voluptatum molestiae. Voluptas accusamus tenetur, a adipisci dolore suscipit excepturi repellat molestias praesentium doloribus reiciendis fugit ullam autem quam!
+              <p class="indented">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea sint, nisi rem earum fugit? Facere veritatis
+                sapiente eveniet quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae velit vel facere dignissimos, ipsam assumenda fuga atque maiores quos, amet adipisci! Animi vero minus quas eveniet, odio excepturi nihil voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, architecto ut quasi voluptas aut fugit labore. Sequi explicabo quod corrupti quos, quam facere nihil aliquam nisi cupiditate velit necessitatibus pariatur vitae! Quo ab doloribus tempora nesciunt sapiente modi enim laboriosam nostrum itaque vero magnam possimus qui nam, similique perferendis distinctio ex delectus eum pariatur praesentium quod dicta aperiam. Corrupti amet, sequi deleniti temporibus ex doloremque dolores illum impedit dolorum a consequatur at laboriosam aliquid quia debitis veritatis consectetur soluta dolore voluptate officia mollitia harum aut quod. Magni earum eligendi sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dicta eos excepturi maxime esse distinctio porro vero sunt, aspernatur dolorum quidem nobis omnis. Amet totam deserunt et provident facilis dolorum itaque vitae minima asperiores sequi voluptatum sed ipsam velit illum repudiandae a, incidunt est vero! Amet rerum, quae aperiam ab facere labore? Nisi veritatis quaerat voluptatum aut, laborum ullam soluta, accusamus modi minima sed perspiciatis saepe. Ratione officiis nisi a blanditiis consectetur natus non eveniet repellat voluptas sequi quod laboriosam excepturi cumque voluptate quas deleniti ipsa ad beatae at quis, porro debitis laborum. Sunt distinctio quam cupiditate deserunt doloribus fugit. 
               </p>
 
+              <!-- <a href="#">Read More <span>>></span></a> -->
             </div>
           </article>
         </div>
 
+        <div class="container-bottom-left">
+          <article>
+            <img src="asset/bottom-left-1.jpg" />
+            <div>
+              <h3>Best smart speakers for the year</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Commodi iure modi animi cupiditate. Explicabo, nihil?
+              </p>
+
+              <a href="#">Read More <span>>></span></a>
+            </div>
+          </article>
+
+          <article>
+            <img src="asset/bottom-left-2.jpg" />
+            <div>
+              <h3>
+                iPad Pro, reviewed: Has the iPad become my main computer now?
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Commodi iure modi animi cupiditate. Explicabo, nihil?
+              </p>
+
+              <a href="#">Read More <span>>></span></a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="main-container-right">
-        <h2>More Latest News</h2>
+        <h2>Latest News</h2>
 
         <article>
           <h4>just in</h4>
@@ -163,22 +201,22 @@
     <footer>
       <div class="footer-container">
         <div class="footer-left">
-          <h2>BANANANEWS</h2>
+          <h2>AZURLIGHT</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             molestias aut blanditiis totam quia enim, autem tenetur cum facere,
             fugit beatae at voluptas ipsum perferendis!
           </p>
         </div>
+
       </div>
 
       <p>Copyright &copy; 2024 All in Golput</p>
     </footer>
 
     <a href="#" class="goTopBtn"><i data-feather="arrow-up"></i></a>
-    <script>
-      feather.replace();
-    </script>
-    <script src="js/landing.js" async defer></script>
+    
+    <script>feather.replace();</script>
+    <script src="scripts/landing.js" async defer></script>
   </body>
 </html>

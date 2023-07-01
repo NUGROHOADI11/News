@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,6 +15,7 @@ html {
 :root {
     --heading: 'Montserrat', sans-serif;
     --primary: #252525;
+    --bg: #010101;
 }
 
 body {
@@ -29,6 +32,9 @@ html {
     scroll-snap-type: y mandatory;
     transition: scroll-behavior 1500ms;
 }
+
+/* search */
+
 
 /* global styling */
 
@@ -111,6 +117,60 @@ hr {
     display: none;
 }
 
+/* search */
+.navbar .search-form{
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.37); */
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.navbar .search-form.active{
+    transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--bg);
+    background: none;
+    padding: 1rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.navbar .search-form label{
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    color: var(--bg);
+}
+
+.navbar .search-form #search-filter{
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    border: none;
+    background: none;
+    border-right: 1px solid var(--bg);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -165,6 +225,8 @@ hr {
     display: block;
 }
 
+
+
 /** main ***/
 
 main a {
@@ -188,30 +250,32 @@ main a:hover {
 /* main container left */
 
 .main-container-left {
-    margin-top: 3rem;
     padding: 30px 10px;
-    
 }
 
 .main-container-left img{
-    padding: 0 4% 1% 4%;
+    margin-bottom: 3rem;
 }
 
-.main-container-left h2 {
-    padding: 15px 0 15px 30px;
-    font-size: 200%;
-    
+.main-container-left>h2 {
+    padding: 50px 0 15px 30px;
+    font-size: 2rem;
 }
 
 .main-container-left h3 {
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--heading);
+}
+
+.indented {
+    text-indent: 2em;
 }
 
 .main-container-left p {
     font-size: 15px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .main-container-left article {
@@ -251,7 +315,7 @@ main a:hover {
 .main-container-right img {
     width: 100px;
     height: 100px;
-
+    align-self: center;
 }
 
 .main-container-right h4 {
@@ -277,7 +341,9 @@ main a:hover {
     margin-right: 10px;
 }
 
+
 /****** footer *****/
+
 footer {
     background: var(--primary);
     color: #f3f3f3;
@@ -303,7 +369,6 @@ footer>p {
     opacity: 0.8;
     margin-top: 20px;
 }
-
 
 .goTopBtn {
     position: fixed;
@@ -337,6 +402,7 @@ footer>p {
     background: #acacac;
 }
 
+
 @media(max-width: 460px) {
     .hot-topic-content h2 {
         font-size: 16px;
@@ -349,12 +415,11 @@ footer>p {
     .main-container-right article img {
         display: none;
     }
+
+
 }
 
 @media(max-width: 500px) {
-    html{
-        font-size: 35%;
-    }
     .main-container-right article {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr 1fr;
@@ -394,7 +459,7 @@ footer>p {
 
 @media (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 62.5%;
     }
 
     #hamburger-menu {
@@ -430,8 +495,12 @@ footer>p {
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
     }
-}
 
+    .navbar .search-form{
+        width: 70%;
+        right: 6rem;
+    }
+}
 
 @media(min-width: 800px) {
     .footer-container {
@@ -444,6 +513,12 @@ footer>p {
     }
 }
 
+@media(min-width: 992px) {
+    main {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+}
 
 @media(min-width: 1080px) {
     .banner {
@@ -454,8 +529,5 @@ footer>p {
 @media (max-width: 1366px) {
     html {
         font-size: 75%;
-    }
-    .main-container-right {
-        margin-top: 3rem;
     }
 }

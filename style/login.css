@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -30,7 +30,24 @@ body {
     backdrop-filter: blur(15px);
     width: 400px;
     border-radius: 2%;
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem 3rem 2rem;
+}
+
+.center a{
+    color: var(--text);
+    text-decoration: none;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+
+.center a span{
+    color: var(--text);
+    padding-left: 0;
+}
+
+.center a:hover{
+    color: var(--primary);
+    padding-left: 0;
 }
 
 .center h1 {
